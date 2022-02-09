@@ -1,0 +1,252 @@
+*{
+    scroll-behavior: smooth;
+}
+:root{
+    --main--color:#1a7fd2;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+.container{ 
+    padding: 0 15px;
+    margin: auto;
+}
+.clear-fix{
+    clear: both;
+}
+
+/*Start service Box */
+.services{
+    padding:50px 0;
+    background-color: #EEE;
+}
+.services h2{
+    margin: 0;
+    margin-bottom: 50px ;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--main--color);
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    
+}
+.services .service-box{
+    display: flex; 
+    background-color: #fff;    
+    padding: 15px;    
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+    
+.services .service-box .service-name{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    width:140px;
+    text-align: center;
+    color: var(--main--color);
+    
+}
+.services .service-box .service-progress{
+    height: 30px;
+    background-color: rgb(245, 243, 243);
+    border-radius: 6px;
+    width: 100%;
+    position: relative;
+}
+.services .service-box span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #2f76a9;
+    width: 0;
+    border-radius: 6px;
+    transition: .6s all ease-in-out ;
+}
+
+        /*End services Box */
+
+        /* Start Social */
+.social{
+    padding: 50px 0;
+    background-color: #fff;
+}
+/* Rsposive For Social Links Section */
+@media(max-width:992px){
+    .social{
+        text-align: center;
+    }
+}
+@media(max-width:992px){
+    .social h2{
+        letter-spacing: 5px;
+
+    }
+}
+@media(max-width:992px){
+    .social h5{
+        margin-left: 0 !important;
+        padding-bottom: 40px;
+    }
+}
+/* ******************************** */
+.social .row .col-md-3{
+    text-align: center;
+}
+.social h2{
+    text-align: center;
+    color: var(--main--color);
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin: 0 0 50;
+}
+.social fa{
+    text-decoration: none;
+}
+.social a:hover{
+    transition: .5s all ease-in-out;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+.social i{
+    font-size: 64px;
+}
+.social .row .fa-twitter-square{
+    color: rgb(29,161,242);
+}
+.social .row .fa-facebok-square{
+    color: rgb(66,103,178);
+}
+.social .row .fa-instagram {
+    color: #dd4f4f	;
+}
+.social .row .fa-linkedin {
+    color: #0077b5	;
+}
+.social h5{
+    color: rgb(18, 69, 104);
+    font-weight: bold;
+}   
+        /* End Social */
+        
+        /*Start Contact Us*/
+.contact-us{
+    padding-top: 80px;
+    background-color: #EEE;
+}
+.contact-us form{
+    margin-bottom: 0;
+}
+.contact-us form a button{
+    border: none;
+    border-radius: 4px;
+    background-color: #0441a4 !important;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #FFF;
+}
+.contact-us form button:hover{
+    transition: .5s all ease-in-out;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.contact-us .contact-information h2{
+    margin-bottom: 35px;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: var(--main--color);
+    text-transform: uppercase;
+    text-align: left;
+    z-index: 1;
+}
+/* Resposive For Contact Us Section */
+@media(max-width:992px){
+    .contact-us .contact-information h2{
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+}
+@media(max-width:992px){
+    .contact-us .contact-information p{
+        margin: 0;
+        text-align: center;
+    }
+}
+/* ******************************** */
+.contact-us .contact-information .contact-form button{
+    background-color: var(--main--color);
+}
+        /*End Contact Us*/
+        /*Start Copy right*/
+.copyright{
+    border-top: 1px solid #3333334f;
+    padding-top: 20px;
+    color: #7E7777;
+}    
+/* Responsive For Footer Section */
+@media(max-width:992px){
+    .copyright .text-uppercase{
+        margin: -10px;
+    }        
+}           
+@media(max-width:992px){
+    .copyright li{
+        display: inline-block;
+        margin-right: 4px;
+        padding: 13px 0;
+        margin: -4px;
+    }
+}
+@media(max-width:992px){
+    .copyright li a{
+        margin: 0 7px;
+    }
+    .copyright li a:hover {
+        color:#7E7777 ; 
+    }
+}
+/* ***************************** */
+.copyright li a{
+    color: #08526d;
+    margin: 0 10px;
+}
+.copyright li{
+    display: inline-block;
+    font-size: 20px;
+}
+
+                        /*End copyright*/
+
+                        /*Start Grid System For All Devices*/
+        
+@media (min-width:576px){ /* Small Devices  => Landscape Phones*/
+    .container{
+        max-width: 540px;
+    }
+}
+@media (min-width:768px){ /* Medium Devices  => Tablets*/
+    .container{
+        max-width: 720px;
+    }
+}
+@media (min-width:992px){ /* Desktops Devices  => PC*/
+    .container{
+        max-width: 960px;
+    }
+}
+@media (min-width:1200px){ /* Large Devices  => Screens*/
+    .container{
+        max-width: 1140px;
+    }
+}
+                        /* End Grid System */

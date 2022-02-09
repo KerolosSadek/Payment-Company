@@ -1,0 +1,128 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+:root{
+    --main--color:#0441a4;
+}
+ /*Start About Us*/
+ .about-us{
+    padding:50px ;
+    display: flex;
+    background-color: #f7f7f7;
+    
+}
+/* Responsive For About Us Section */
+@media(max-width:768px){
+    .about-us{
+        padding:50px 0;
+        display: block;
+        }
+}
+@media(min-width:992px){
+    .about-us{
+        padding:50px 0;
+        display: flex;
+        }
+}
+/* ******************************* */
+.about-us h1{
+    margin-bottom: 15px ;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--main--color);
+    letter-spacing: 5px;
+}
+h2{
+    font-family: "BebasNeue", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #d24508;
+    line-height: 89%;
+    margin: 0 0 20px 0;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+/* .about-us button{
+    border: none;
+    border-radius: 4px;
+    background-color: #0441a4;
+    margin-top: 30px;
+    padding: 10px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #FFF;
+}
+.about-us button svg{
+    margin-bottom: 3px;
+}
+.about-us button:hover{
+    transition: .5s all ease-in-out;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+} */
+.about-us img{
+    width: 140%;
+}
+@media(max-width:992px){
+    .about-us img{
+        width: 310px;
+        margin-top: 35px;
+    }
+    .about-us{
+        text-align: center;
+        
+    }
+    .about-us .info-box h2{
+        letter-spacing: 17px;
+        margin-bottom: 30px;
+        margin-left: 24px;
+    }
+    .about-us .info-box p{
+        padding: 0 45px;
+    }
+}
+        /*End About Us*/
+         /*Start Copy right*/
+.copyright{
+    border-top: 1px solid #3333334f;
+    padding-top: 20px;
+    color: #7E7777;
+}    
+/* Responsive For Footer Section */
+@media(max-width:992px){
+    .copyright .text-uppercase{
+        margin: -10px;
+    }        
+}           
+@media(max-width:992px){
+    .copyright li{
+        display: inline-block;
+        margin-right: 4px;
+        padding: 13px 0;
+        margin: -4px;
+    }
+}
+@media(max-width:992px){
+    .copyright li a{
+        margin: 0 7px;
+    }
+    .copyright li a:hover {
+        color:#7E7777 ; 
+    }
+}
+/* ***************************** */
+.copyright li a{
+    color: #08526d;
+    margin: 0 10px;
+}
+.copyright li{
+    display: inline-block;
+    font-size: 20px;
+}
+
+                        /*End copyright*/
